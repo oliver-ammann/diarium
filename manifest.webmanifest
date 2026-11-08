@@ -1,0 +1,17 @@
+{
+  "name": "Diarium",
+  "short_name": "Diarium",
+  "description": "Diarium – persönliche Agenda für Subalternoffiziere – offline und verschlüsselt.",
+  "lang": "de-CH",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f1f2ec",
+  "theme_color": "#f1f2ec",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
