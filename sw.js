@@ -1,6 +1,6 @@
 /* Diarium – Service Worker: hält die App offline verfügbar.
    Bei jeder neuen Version VERSION erhöhen, damit Geräte das Update erhalten. */
-const VERSION = 'diarium-1.0.0';
+const VERSION = 'diarium-1.0.1';
 const ASSETS = [
   './',
   './index.html',

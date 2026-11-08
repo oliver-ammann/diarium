@@ -3,7 +3,7 @@
    Keine Verbindung zu irgendeinem Server. */
 'use strict';
 (() => {
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.0.1';
 
 /* ================= helpers ================= */
 const $ = (s, r = document) => r.querySelector(s);
@@ -444,7 +444,7 @@ function blockHtml(b, l) {
 }
 function timeGrid(cols) {
   const H = (T1 - T0) / 60, tIdx = todayStr();
-  const minW = cols.length > 3 && !narrow.matches ? 104 : 0;
+  const minW = 0; // let columns shrink to fit (no forced min) so the week grid never needs horizontal scroll on narrower tablets like iPad mini
   let html = `<div class="cal-h" style="grid-column:1"></div>`;
   cols.forEach((c, i) => { html += `<div class="cal-h ${c.today ? 'today' : ''}" style="grid-column:${i + 2}">${c.head}</div>`; });
   html += `<div class="gut" style="height:${H * PXH}px">` + Array.from({ length: H - 1 }, (_, i) => `<span style="top:${(i + 1) * PXH}px">${pad(T0 / 60 + i + 1)}00</span>`).join('') + `</div>`;
