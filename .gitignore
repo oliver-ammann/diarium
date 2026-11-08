@@ -2,3 +2,6 @@
 Thumbs.db
 *.log
 node_modules/
+
+# Source documents (official/internal, may contain unit/personal details) — never commit
+/quellen/
